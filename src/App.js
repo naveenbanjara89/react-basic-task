@@ -3,12 +3,13 @@ import './App.css';
 
 function App() {
   const [records, setRecords] = useState([
-    { name: "pineapple" },
-    { name: "kiwi" },
-    { name: "watermelon" },
-    { name: "Mango" },
-    { name: "papaya" },
-    { name: "blueberry" }
+    { name: "Naveen G" },
+    { name: "Ajay G" },
+    { name: "Amrudh G" },
+    { name: "Parth G" },
+    { name: "Pappu Patrick" },
+    { name: "Ravi R#" },
+    { name: "Abhishek ChutKi" }
   ]);
 
   const [showElement, setShowElement] = useState(true);

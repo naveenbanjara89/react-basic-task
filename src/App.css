@@ -1,0 +1,189 @@
+/* App.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* background-color: #f7f9fc; */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: url("./Images/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  /* background-color: #ffffff; */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #9e5cfa;
+}
+
+.task-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #0a061aa8;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #ce91dd;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  color: #9e5cfa;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #2b3d60, #634896);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #18243b, #352456);
+  
+}
+
+button:disabled {
+  background-color: #bbb;
+  color: #fff;
+  cursor: not-allowed;
+}
+/* Hide the spinner controls on number inputs */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield;
+}
+input[type="text"],
+input[type="number"] {
+  padding: 12px;
+  font-size: 1.1em;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #784caf;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 10px;
+  color: white;
+  background-color: #d9cddd70;
+  margin: 5px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #c7b8cd70;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.counter span {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: #aaa;
+}
+
+/* Search Filter */
+input[type="text"].search-bar {
+  max-width: 400px;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+#disable-btn{
+  color: white;
+}
+
+.input{
+  background-color: #33193996;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  button {
+    width: 100%;
+  }
+}

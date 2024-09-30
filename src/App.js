@@ -79,31 +79,42 @@ function App() {
         </section>
 
         <section>
-          <h3>Enable/Disable a Button</h3>
-            return (
-            <div>
-              <button onClick={() => setEnabled(!enabled)}>
-                {enabled ? 'Disable' : 'Enable'}
-              </button>
-              <button disabled={!enabled}>Click me</button>
-            </div>
-          );
-          // <label id='disable-btn'>
-            // <input
-            //   // type="checkbox"
-            //   // checked={isButtonDisabled}
-            //   onChange={() => setIsButtonDisabled(!isButtonDisabled)}
-            // />
-            // Disable Button
-            // <input
-            //   // type="checkbox"
-            //   // checked={isButtonEnabled}
-            //   onChange={() => setIsButtonEnabled(!isButtonEnabled)}
-            // />
-            // Enable Button
-          // </label>
-          // <button disabled={isButtonDisabled}>Disabled</button>
-          // <button enabled={!isButtonEnabled}>Enabled</button>
+            <h1>Enable/Disable Button</h1>
+
+      {/* Button to toggle enable/disable */}
+            <button onClick={toggleButtonState}>
+              {isButtonEnabled ? "Disable Button" : "Enable Button"}
+            </button>
+      
+            {/* Button that gets enabled/disabled based on the state */}
+            <button disabled={!isButtonEnabled}>
+              {isButtonEnabled ? "Enabled" : "Disabled"}
+            </button>
+                    // <h3>Enable/Disable a Button</h3>
+                    //   return (
+                    //   <div>
+                    //     <button onClick={() => setEnabled(!enabled)}>
+                    //       {enabled ? 'Disable' : 'Enable'}
+                    //     </button>
+                    //     <button disabled={!enabled}>Click me</button>
+                    //   </div>
+                    // );
+                    // // <label id='disable-btn'>
+                    //   // <input
+                    //   //   // type="checkbox"
+                    //   //   // checked={isButtonDisabled}
+                    //   //   onChange={() => setIsButtonDisabled(!isButtonDisabled)}
+                    //   // />
+                    //   // Disable Button
+                    //   // <input
+                    //   //   // type="checkbox"
+                    //   //   // checked={isButtonEnabled}
+                    //   //   onChange={() => setIsButtonEnabled(!isButtonEnabled)}
+                    //   // />
+                    //   // Enable Button
+                    // // </label>
+                    // // <button disabled={isButtonDisabled}>Disabled</button>
+                    // // <button enabled={!isButtonEnabled}>Enabled</button>
         </section>
 
         <section>

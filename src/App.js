@@ -22,7 +22,7 @@ function App() {
   const [counter, setCounter] = useState(0);
   const [searchTerm, setSearchTerm] = useState('');
 
-  const addChild = () => setChildren([...children, `Child ${children.length + 1}`]);
+  const addChild = () => setChildren([...children, `Naveen ${children.length + 1}`]);
 
   const filteredRecords = records.filter(record =>
     record.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -75,7 +75,7 @@ function App() {
           <button onClick={() => setShowElement(!showElement)}>
             {showElement ? "Hide" : "Show"} Element
           </button>
-          {showElement && <p>This is a toggled paragraph.</p>}
+          {showElement && <p>Hellow Everyone , I am Naveen Banjara....!</p>}
         </section>
 
         <section>
@@ -83,13 +83,13 @@ function App() {
           <label id='disable-btn'>
             <input
               // type="checkbox"
-              checked={isButtonDisabled}
+              // checked={isButtonDisabled}
               onChange={() => setIsButtonDisabled(!isButtonDisabled)}
             />
             Disable Button
             <input
               // type="checkbox"
-              checked={isButtonEnabled}
+              // checked={isButtonEnabled}
               onChange={() => setIsButtonEnabled(!isButtonEnabled)}
             />
             Enable Button
@@ -116,7 +116,7 @@ function App() {
           </button>
           <ul>
             {children.map((child, index) => (
-              <li key={index}>{Naveen},{Ajay},{Ravi},{Parteek},{Parth},{Abhishek},{Amrudh}</li>
+              <li key={index}>{child}</li>
             ))}
           </ul>
         </section>

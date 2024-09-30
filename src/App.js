@@ -81,18 +81,18 @@ function App() {
         <section>
           <h3>Enable/Disable a Button</h3>
           <label id='disable-btn'>
-            <input
-              // type="checkbox"
-              // checked={isButtonDisabled}
-              onChange={() => setIsButtonDisabled(!isButtonDisabled)}
-            />
-            Disable Button
-            <input
-              // type="checkbox"
-              // checked={isButtonEnabled}
-              onChange={() => setIsButtonEnabled(!isButtonEnabled)}
-            />
-            Enable Button
+            // <input
+            //   // type="checkbox"
+            //   // checked={isButtonDisabled}
+            //   onChange={() => setIsButtonDisabled(!isButtonDisabled)}
+            // />
+            // Disable Button
+            // <input
+            //   // type="checkbox"
+            //   // checked={isButtonEnabled}
+            //   onChange={() => setIsButtonEnabled(!isButtonEnabled)}
+            // />
+            // Enable Button
           </label>
           <button disabled={isButtonDisabled}>Disabled</button>
           <button enabled={!isButtonEnabled}>Enabled</button>

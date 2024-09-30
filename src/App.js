@@ -14,6 +14,7 @@ function App() {
 
   const [showElement, setShowElement] = useState(true);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const [isButtonEnabled, setIsButtonEnabled] = useState(false);
   const [textboxValue, setTextboxValue] = useState('');
   const [children, setChildren] = useState([]);
   const [num1, setNum1] = useState('');

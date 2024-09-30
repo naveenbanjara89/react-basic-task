@@ -80,7 +80,15 @@ function App() {
 
         <section>
           <h3>Enable/Disable a Button</h3>
-          <label id='disable-btn'>
+            return (
+            <div>
+              <button onClick={() => setEnabled(!enabled)}>
+                {enabled ? 'Disable' : 'Enable'}
+              </button>
+              <button disabled={!enabled}>Click me</button>
+            </div>
+          );
+          // <label id='disable-btn'>
             // <input
             //   // type="checkbox"
             //   // checked={isButtonDisabled}
@@ -93,9 +101,9 @@ function App() {
             //   onChange={() => setIsButtonEnabled(!isButtonEnabled)}
             // />
             // Enable Button
-          </label>
-          <button disabled={isButtonDisabled}>Disabled</button>
-          <button enabled={!isButtonEnabled}>Enabled</button>
+          // </label>
+          // <button disabled={isButtonDisabled}>Disabled</button>
+          // <button enabled={!isButtonEnabled}>Enabled</button>
         </section>
 
         <section>

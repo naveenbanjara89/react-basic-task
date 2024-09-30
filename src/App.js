@@ -94,7 +94,8 @@ function App() {
             />
             Enable Button
           </label>
-          <button disabled={isButtonDisabled}>Click Me!</button>
+          <button disabled={isButtonDisabled}>Disabled</button>
+          <button enabled={!isButtonEnabled}>Enabled</button>
         </section>
 
         <section>

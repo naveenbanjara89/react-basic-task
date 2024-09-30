@@ -79,14 +79,13 @@ function App() {
         </section>
 
         <section>
-            <h1>Enable/Disable Button</h1>
+            
+            <h3>Enable/Disable Button</h3>
 
-      {/* Button to toggle enable/disable */}
             <button onClick={toggleButtonState}>
               {isButtonEnabled ? "Disable Button" : "Enable Button"}
             </button>
       
-            {/* Button that gets enabled/disabled based on the state */}
             <button disabled={!isButtonEnabled}>
               {isButtonEnabled ? "Enabled" : "Disabled"}
             </button>

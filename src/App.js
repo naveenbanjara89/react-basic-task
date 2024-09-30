@@ -3,13 +3,13 @@ import './App.css';
 
 function App() {
   const [records, setRecords] = useState([
-    { name: "Naveen G" },
-    { name: "Ajay G" },
-    { name: "Amrudh G" },
-    { name: "Parth G" },
-    { name: "Pappu Patrick" },
-    { name: "Ravi R#" },
-    { name: "Abhishek ChutKi" }
+    { name: "BMW X7" },
+    { name: "Jeep Wrangler" },
+    { name: "Range Rover" },
+    { name: "Toyota Vellfire" },
+    { name: "Volvo XC90" },
+    { name: "Audi RS5" },
+    { name: "Bentley Continental" }
   ]);
 
   const [showElement, setShowElement] = useState(true);

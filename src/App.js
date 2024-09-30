@@ -56,8 +56,8 @@ function App() {
         <h2>Task 1: Small Programming Learning Tasks</h2>
 
         <section>
-          <h3>Display Simple JSX</h3>
-          <p>Hello, React!</p>
+          <h3>Display Simple JSX File</h3>
+          <p>Hello, React....!</p>
         </section>
 
         <section>
@@ -81,11 +81,17 @@ function App() {
           <h3>Enable/Disable a Button</h3>
           <label id='disable-btn'>
             <input
-              type="checkbox"
+              // type="checkbox"
               checked={isButtonDisabled}
               onChange={() => setIsButtonDisabled(!isButtonDisabled)}
             />
             Disable Button
+            <input
+              // type="checkbox"
+              checked={isButtonEnabled}
+              onChange={() => setIsButtonEnabled(!isButtonEnabled)}
+            />
+            Enable Button
           </label>
           <button disabled={isButtonDisabled}>Click Me!</button>
         </section>
@@ -109,7 +115,7 @@ function App() {
           </button>
           <ul>
             {children.map((child, index) => (
-              <li key={index}>{child}</li>
+              <li key={index}>{Naveen},{Ajay},{Ravi},{Parteek},{Parth},{Abhishek},{Amrudh}</li>
             ))}
           </ul>
         </section>
@@ -121,14 +127,14 @@ function App() {
             type="text"
             value={num1}
             onChange={handleNum1Change}
-            placeholder="Number 1"
+            placeholder=" "
           />
           <input
             className='input'
             type="text"
             value={num2}
             onChange={handleNum2Change}
-            placeholder="Number 2"
+            placeholder=" "
           />
           <p>Sum: {calculateSum()}</p>
         </section>

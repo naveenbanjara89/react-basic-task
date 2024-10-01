@@ -21,7 +21,7 @@ function App() {
   const [counter, setCounter] = useState(0);
   const [searchTerm, setSearchTerm] = useState('');
 
-  const addChild = () => setChildren([...children, `Naveen ${children.length + 1}`]);
+  const addChild = () => setChildren([...children, document.getElementById("component-input").value]);
 
   const filteredRecords = records.filter(record =>
     record.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -105,9 +105,20 @@ function App() {
 
         <section>
           <h3>Dynamically Add Child Components</h3>
+
+          <input
+            className='input'
+            id='component-input'
+            type="text"
+            placeholder="Add Component"
+          />
+
           <button onClick={addChild} disabled={isButtonDisabled}>
             Add Child
           </button>
+          
+          
+
           <ul>
             {children.map((child, index) => (
               <li key={index}>{child}</li>

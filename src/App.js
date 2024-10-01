@@ -78,25 +78,18 @@ function App() {
           {showElement && <p>Hellow Everyone , I am Naveen Banjara....!</p>}
         </section>
 
-       <section>
-          <h3>Show/Hide Element</h3>
-          <button onClick={() => setShowElement(!showElement)}>
-            {showElement ? "Hide" : "Show"} Element
-          </button>
-          {showElement && <p>This is a toggled paragraph.</p>}
-        </section>
-
         <section>
           <h3>Enable/Disable a Button</h3>
-          <label>
-            <input
-              type="checkbox"
-              checked={isButtonDisabled}
-              onChange={() => setIsButtonDisabled(!isButtonDisabled)}
-            />
-            Disable Button
-          </label>
-          <button disabled={isButtonDisabled}>Click Me!</button>
+          // <label>
+            <button onClick={()=>{isButtonDisabled=false}}>Enable</button>
+            // <input
+            //   type="checkbox"
+            //   checked={isButtonDisabled}
+            //   onChange={() => setIsButtonDisabled(!isButtonDisabled)}
+            // />
+            // Disable Button
+          // </label>
+          <button onClick={()=>{isButtonDisabled=true}}>Disable</button>
         </section>
 
         <section>

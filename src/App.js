@@ -81,7 +81,7 @@ function App() {
         <section>
           <h3>Enable/Disable a Button</h3>
           // <label>
-            <button onClick={()=>{isButtonDisabled=false}}>Enable</button>
+            <button onClick={isButtonDisabled=false}>Enable</button>
             // <input
             //   type="checkbox"
             //   checked={isButtonDisabled}
@@ -89,7 +89,7 @@ function App() {
             // />
             // Disable Button
           // </label>
-          <button onClick={()=>{isButtonDisabled=true}}>Disable</button>
+          <button onClick={isButtonDisabled=true}>Disable</button>
         </section>
 
         <section>

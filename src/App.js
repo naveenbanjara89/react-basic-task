@@ -14,7 +14,6 @@ function App() {
 
   const [showElement, setShowElement] = useState(true);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
-  const [isButtonEnabled, setIsButtonEnabled] = useState(false);
   const [textboxValue, setTextboxValue] = useState('');
   const [children, setChildren] = useState([]);
   const [num1, setNum1] = useState('');
@@ -79,18 +78,18 @@ function App() {
         </section>
 
         <section>
-          <h3>Enable/Disable a Button</h3>
-          // <label>
+            <h3>Enable/Disable a Button</h3>
+            {/* <label id='disable-btn'>
+              <input
+                type="checkbox"
+                checked={isButtonDisabled}
+                onChange={() => setIsButtonDisabled(!isButtonDisabled)}
+              />
+              Disable Button
+            </label> */}
             <button onClick={() => setIsButtonDisabled(false)}>Enable</button>
-            // <input
-            //   type="checkbox"
-            //   checked={isButtonDisabled}
-            //   onChange={() => setIsButtonDisabled(!isButtonDisabled)}
-            // />
-            // Disable Button
-          // </label>
-          <button onClick={() => setIsButtonDisabled(true)}>Disable</button>
-        </section>
+            <button onClick={() => setIsButtonDisabled(true)}>Disable</button>
+          </section>
 
         <section>
           <h3>2-Way Data Binding</h3>
